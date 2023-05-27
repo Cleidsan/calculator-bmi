@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator BMI</title>
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="assets/img/illustrations.svg" alt="">
+        </section>
+
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">
+                    Calculator - BMI
+                </h1>
+                <div class="input-box">
+                    <label for="weight">
+                        Weight in Kg 
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="height">
+                        Height in meters 
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" step="0.01" id="height" name="height" required>
+                        <span>
+                            m
+                        </span>
+                    </div>
+                </div>
+                <button id="calculate">
+                    Calculate
+                </button>
+            </form>
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Your BMI</span>
+                    </div>
+                    <div id="description">
+                        <span>55</span>
+                    </div>
+                </div>
+                <div id="more_info">
+                    <a href="https://www.cdc.gov/healthyweight/assessing/bmi/index.html" target="_blank">
+                        More information about BMI
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
